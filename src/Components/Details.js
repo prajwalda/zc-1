@@ -57,7 +57,7 @@ class Details extends Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:4567/restaurant/${restaurant}`,
+            url: `https://fast-shelf-50258.herokuapp.com/restaurant/${restaurant}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -69,7 +69,7 @@ class Details extends Component {
     handleOrder = (resId) => {
         axios({
             method: 'GET',
-            url: `http://localhost:4567/menuitems/${resId}`,
+            url: `https://fast-shelf-50258.herokuapp.com/menuitems/${resId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -145,7 +145,7 @@ class Details extends Component {
       form.remove()
   } 
     getData = (data) => {
-      return fetch(`http://localhost:4567/payment`, {
+      return fetch(`https://fast-shelf-50258.herokuapp.com/payment`, {
           method: "POST",
           headers: {
               Accept: "application/json",
@@ -171,7 +171,7 @@ class Details extends Component {
 
           this.getData(paymentObj).then(response => {
               var information = {
-                  action: "https://securegw-stage.paytm.in/order/process",
+                  action: "https://fast-shelf-50258.herokuapp.com/process",
                   params: response
               }
               this.post(information)

@@ -32,7 +32,7 @@ class Filter extends React.Component {
 
       axios({
           method: 'POST',
-          url: 'http://localhost:4567/filter',
+          url: 'https://fast-shelf-50258.herokuapp.com/filter',
           headers: { 'Content-Type': 'application/json' },
           data: filterObj
       })
@@ -43,7 +43,7 @@ class Filter extends React.Component {
 
       axios({
           method: 'GET',
-          url: 'http://localhost:4567/locations',
+          url: 'https://fast-shelf-50258.herokuapp.com/locations',
           headers: { 'Content-Type': 'application/json' }
       })
           .then(response => {
@@ -68,7 +68,7 @@ class Filter extends React.Component {
 
       axios({
           method: 'POST',
-          url: 'http://localhost:4567/filter',
+          url: 'https://fast-shelf-50258.herokuapp.com/filter',
           headers: { 'Content-Type': 'application/json' },
           data: filterObj
       })
@@ -94,7 +94,7 @@ class Filter extends React.Component {
 
       axios({
           method: 'POST',
-          url: 'http://localhost:4567/filter',
+          url: 'https://fast-shelf-50258.herokuapp.com/filter',
           headers: { 'Content-Type': 'application/json' },
           data: filterObj
       })
@@ -121,7 +121,7 @@ class Filter extends React.Component {
 
     axios({
         method: 'POST',
-        url: 'http://localhost:4567/filter',
+        url: 'https://fast-shelf-50258.herokuapp.com/filter',
         headers: { 'Content-Type': 'application/json' },
         data: filterObj
     })
@@ -147,7 +147,7 @@ handlePageChange = (page) => {
 
   axios({
       method: 'POST',
-      url: 'http://localhost:4567/filter',
+      url: 'https://fast-shelf-50258.herokuapp.com/filter',
       headers: { 'Content-Type': 'application/json' },
       data: filterObj
   })
@@ -181,7 +181,7 @@ handleCuisineChange = (cuisineId) => {
 
   axios({
       method: 'POST',
-      url: 'http://localhost:4567/filter',
+      url: 'https://fast-shelf-50258.herokuapp.com/filter',
       headers: { 'Content-Type': 'application/json' },
       data: filterObj
   })
