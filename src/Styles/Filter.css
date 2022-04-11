@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+}
+body{
+    background-color: #fbfbfb;
+}
+.filter-header{
+    height: 80px;
+    background-color: #211515;
+    display: flex;
+}
+.filter-logo-div{
+    align-self: center;
+}
+.filter-logo{
+    background-color: white;
+    border-radius: 50%;
+    color: #eb2929;
+    font-weight: 800;
+    font-size: 33px;
+    padding: 1px 10px 4px;
+}
+.filter-section{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+.result-section{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+.thumb{
+    border-radius: 10px;
+    width: 140px;
+    height: 120px;
+}
+.line-break{
+    border: 1px solid#dedfe5;
+}
+.page{
+    text-decoration: none;
+}
+
+.no-records{
+    color: red;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+}
